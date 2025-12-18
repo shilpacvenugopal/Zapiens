@@ -1,0 +1,371 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Zapiens</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Zapiens" name="keywords">
+    <meta content="Zapiens" name="description">
+    <link href="path/to/bootstrap.min.css" rel="stylesheet">
+
+    <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  
+    
+</head>
+
+<body>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+
+   <!-- carousel Start -->
+
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0 border-0">
+            <a href="/" class="navbar-brand p-0">
+                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Zapiens</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="/" class="nav-item nav-link">Home</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#team" class="nav-item nav-link">Team</a>
+                    <a href="#ventures" class="nav-item nav-link">Our Ventures</a>
+                   
+                </div>
+            </div>
+        </nav>
+    
+
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1500">
+                    <img class="w-100" src="{% static 'img/carousel-1.jpg' %}" alt="Image" style="height: 100vh; object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3 text-center" style="max-width: 900px;">
+                            <h1 class="display-3 text-white mb-3 animated zoomIn"
+                                style="color: #FFFFFF; margin: 10px 0px; line-height: 1.2; font-family: 'Montserrat', sans-serif; 
+                                    font-size: 50px;">
+                                Innovating Solutions. Inspiring Growth. Impacting Industries.
+                            </h1>
+                           <!-- <h1 class="display-3 text-white mb-3 animated zoomIn"
+                                style="color: #FFFFFF; margin: 5px 0px; line-height: 1.2;" 
+                                >
+                                <span class="d-none d-lg-inline" style="font-size: 40px;">
+                                    Transforming Vision Into Global Impact
+                                </span>
+                                <span class="d-lg-none fs-2 fs-md-1">
+                                    Transforming Vision Into Global Impact
+                                </span>
+                            </h1> -->
+                            <p class="text-white mb-4 animated fadeIn fs-6 fs-md-5 mx-auto"
+                                style="max-width: 90%; font-family: 'Montserrat', sans-serif;">
+                                At Zapiens Innocvation Pvt Ltd, We build our own SaaS-based products and platforms that bridge gaps, simplify systems, and shape the future.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+               
+
+            </div>
+        
+            
+        </div>
+            
+    </div>
+    <!-- carousel END -->
+
+
+ 
+    
+
+   
+   <!-- About Start -->
+    <div class="container-fluid pb-3 wow fadeInUp bg-white" data-wow-delay="0.1s" id="about">
+    <div class="container py-3 d-flex flex-column justify-content-center" style="min-height: 100vh;">
+        
+        <div class="row g-5 align-items-center">
+            
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-4">
+                    <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
+                    <h1 class="mb-4" style="max-width: 90%;">Driven by Innovation. Grounded in Impact.</h1> 
+                </div>
+                
+                <p class="mb-4 " style="max-width: 77.5%; color: #555555; line-height: 1.6;">
+                  Zapiens Innocvation Pvt Ltd is focused on developing powerful SaaS-based products and scalable digital platforms. 
+                  We don’t just follow trends, we create them by identifying real-world pain points and designing solutions that simplify, 
+                  empower, and evolve industries.
+                </p>
+               
+            </div>
+            
+            <div class="col-lg-5 p-0">
+                <div class="position-relative" style="height: 500px;"> 
+                    <img class="position-absolute w-100 h-100 wow zoomIn about-image" 
+                    data-wow-delay="0.9s" 
+                    src="{% static 'img/about.jpg' %}">
+               
+                </div>
+            </div>
+            
+        </div> 
+    </div>
+    </div>
+   <!-- About END -->
+
+    <!-- Vission Mission Start -->
+     
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background-color: #121A4B;">
+        <div class="container py-5">
+          <div class="row g-5 align-items-center">
+            
+            <!-- OUR VISION -->
+            <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+              <div class="card bg-transparent border-0 text-white text-center p-4">
+                <h2 class="title fw-bold text-uppercase mb-3 Montserrat-font text-white" style="font-size: 2.2em;">OUR VISION</h2>
+                <div class="underline mx-auto mb-4" style="width: 60px; height: 3px; background-color: #4dd0e1;"></div>
+                <p class="px-2 Montserrat-font vision-mission-text-width mx-auto" style="line-height: 1.8; font-size: 16px;">
+                  To be a global catalyst of innovation, driving technological, social, and environmental transformation 
+                  across industries through intelligent, sustainable, and people-first solutions.
+                </p>
+              </div>
+            </div>
+      
+            <!-- OUR MISSION -->
+            <div class="col-lg-6 wow zoomIn" data-wow-delay="0.6s">
+              <div class="card bg-transparent border-0 text-white text-center p-4">
+                <h2 class="title fw-bold text-uppercase mb-3 Montserrat-font text-white" style="font-size: 2.2em;">OUR MISSION</h2>
+                <div class="underline mx-auto mb-4" style="width: 60px; height: 3px; background-color: #4dd0e1;"></div>
+                <p class="px-2 Montserrat-font vision-mission-text-width mx-auto" style="line-height: 1.8; font-size: 16px;">
+                  To identify untapped opportunities, develop impactful SaaS platforms, 
+                  and expand across sectors that enhance the way businesses operate and communities connect
+                </p>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+   <!-- Vission Mission END -->
+
+   
+
+
+   <!-- FOUNDER START -->
+   <div class="container-fluid py-5 wow fadeInUp bg-white" data-wow-delay="0.1s" id="team">
+    <div class="container py-5 d-flex flex-column justify-content-center" style="min-height: 85vh;">
+      
+      <div class="row g-5">
+        <div class="col-lg-12">
+          <div class="section-title position-relative pb-3 mb-4">
+            <h1 class="mb-0 Montserrat-font fw-bold" style="font-size: 2.5rem; color: #333333;">Meet The Team</h1> 
+            <h1 class="mb-4 Montserrat-font fw-bold" style="font-size: 2.5rem; margin-top: -5px; color: #333333;">Founders of the Group</h1>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row g-5 align-items-center">
+        
+        <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+          <div class="p-4 rounded d-flex align-items-center" style="background-color: #f8f8f8; min-height: 250px;"> 
+            <div class="w-100">
+              <p class="Montserrat-font" style="font-size: 16px; color: #3a3a3a; line-height: 1.6;">
+                We founded Zapiens Group with a belief in creating innovative and sustainable solutions that address real challenges, support start-ups and entrepreneurs, and establish an Indian enterprise with a global presence.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 wow zoomIn" data-wow-delay="0.5s" style="margin-top: -10px;"> 
+          <div class="row g-5">
+            
+            <!-- Team Member 1 -->
+            <div class="col-md-6">
+              <a href="https://www.linkedin.com/in/jeffreybrown" target="_blank" style="text-decoration: none;">
+                <div class="team-item bg-white overflow-hidden text-center shadow-sm"
+                     style="min-height: 250px; border-radius: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+                     
+                  <div class="d-flex align-items-center justify-content-center" style="height: 160px; width: 100%;">
+                    <img class="img-fluid" src="{% static 'img/team-1.jpg' %}" alt="Jeffrey Brown" 
+                         style="height: 140px; width: 140px; border-radius: 50%; border: 2px solid #eee;">
+                  </div>
+  
+                  <div class="text-center pt-0 pb-4"> 
+                    <h4 class="Montserrat-font mb-0 mt-2 fw-bold" style="color: #333333;">JEFFREY BROWN</h4> 
+                    <p class="text-uppercase text-muted Montserrat-font" style="font-size: 0.8em; margin-bottom: 0.5rem;">
+                      Creative Leader
+                    </p>
+                    <div class="d-flex justify-content-center mt-2">
+                      <i class="fab fa-linkedin-in" style="color: #0077b5; font-size: 1.1rem;"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+  
+            <!-- Team Member 2 -->
+            <div class="col-md-6">
+              <a href="https://www.linkedin.com/in/annrichmond" target="_blank" style="text-decoration: none;">
+                <div class="team-item bg-white overflow-hidden text-center shadow-sm"
+                     style="min-height: 250px; border-radius: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+                     
+                  <div class="d-flex align-items-center justify-content-center" style="height: 160px; width: 100%;">
+                    <img class="img-fluid" src="{% static 'img/team-2.jpg' %}" alt="Ann Richmond" 
+                         style="height: 140px; width: 140px; border-radius: 50%; border: 2px solid #eee;">
+                  </div>
+  
+                  <div class="text-center pt-0 pb-4">
+                    <h4 class="Montserrat-font mb-0 mt-2 fw-bold" style="color: #333333;">ANN RICHMOND</h4>
+                    <p class="text-uppercase text-muted Montserrat-font" style="font-size: 0.8em; margin-bottom: 0.5rem;">
+                      Web Developer
+                    </p>
+                    <div class="d-flex justify-content-center mt-2">
+                      <i class="fab fa-linkedin-in" style="color: #0077b5; font-size: 1.1rem;"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+  
+          </div>
+        </div>
+      </div> 
+    </div>
+   </div>
+    <!-- FOUNDER END -->
+
+    <!-- Our Ventures Start -->
+  
+    <div class="container-fluid pb-3 wow fadeInUp bg-white" data-wow-delay="0.1s" id="ventures">
+      <div class="container py-3 d-flex flex-column justify-content-center" style="min-height: 100vh;">
+          
+          <div class="row g-5 align-items-center">
+              
+              <div class="col-lg-7">
+                  <div class="section-title position-relative pb-3 mb-4">
+                      <!-- <h5 class="fw-bold text-primary text-uppercase">About Us</h5> -->
+                      <h1 class="mb-4" style="max-width: 90%;">Empowering Tomorrow’s Shopping, Today</h1> 
+                  </div>
+                  
+                  <p class="mb-4 " style="max-width: 77.5%; color: #555555; line-height: 1.6;">
+                    Zappy is an innovative hyperlocal multi-vendor platform that seamlessly connects local sellers with buyers, offering an exceptional 
+                    online and offline experience, backed by a unique customer retention strategy that cultivates loyalty and elevate business
+                  </p>
+                  <a href="#"
+                      style="
+                        display:inline-flex;
+                        align-items:center;
+                        justify-content:center;
+                        padding:14px 48px;
+                        background:#0b8f61;
+                        color:#fff;
+                        border-radius:999px;
+                        font-weight:600;
+                        font-size:15px;
+                        letter-spacing:1px;
+                        text-decoration:none;
+                        box-shadow:0 0 0 6px #1fc48a;
+                        transition:all .25s ease-in-out;
+                      ">
+                      KNOW ZAPPY
+                    </a>
+
+                  
+
+                  
+              </div>
+              
+              <div class="col-lg-5 d-flex justify-content-center">
+
+                <div class="position-relative" style="width:320px; height:620px;">
+                  <img
+                    src="{% static 'img/zappy-pitchdeck.png' %}"
+                    alt="Zappy App Preview"
+                    class="img-fluid h-100 w-100 wow zoomIn"
+                    data-wow-delay="0.3s"
+                    style="
+                      object-fit: cover;
+                      border-radius: 36px;
+                      box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+                    "
+                  >
+                </div>
+        
+              </div>
+              
+          </div> 
+      </div>
+    </div>
+    
+
+    <!-- Our Ventures END -->
+
+
+  
+    <!-- FOOTER START -->
+    <div class="container-fluid bg-dark text-light wow fadeInUp" data-wow-delay="0.1s" id="contact">
+        <div class="container">
+            <div class="row justify-content-center py-5">
+                <div class="col-12 text-center">
+                    <a href="index.html" class="navbar-brand d-block mb-3">
+                        <h1 class="m-0 text-light display-4">Zapiens GROUP</h1>
+                    </a>
+                    
+                    <p class="lead mb-0 text-light-50">
+                        Transforming Vision Into Global Impact
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center pt-3"> 
+                    <p class="text-light-50 small mb-0">
+                        &copy; <a class="text-primary" href="#">Zapiens GROUP</a>. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- FOOTER END -->
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
+
+
+
